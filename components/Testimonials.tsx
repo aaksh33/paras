@@ -1,0 +1,140 @@
+'use client'
+import { useState, useEffect } from 'react'
+
+export default function Testimonials() {
+  const testimonials = [
+    {
+      id: 1,
+      rating: 5,
+      review: "Exceptional service! They helped us find our dream home within our budget. Professional team.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
+      name: "John Smith",
+      profession: "Software Engineer"
+    },
+    {
+      id: 2,
+      rating: 5,
+      review: "Outstanding experience! Their market knowledge saved us thousands. Highly recommend.",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face",
+      name: "Sarah Johnson",
+      profession: "Marketing Manager"
+    },
+    {
+      id: 3,
+      rating: 5,
+      review: "Professional team made selling our property stress-free. Great communication throughout.",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
+      name: "Michael Brown",
+      profession: "Business Owner"
+    },
+    {
+      id: 4,
+      rating: 5,
+      review: "Amazing support throughout the buying process. Highly recommended for first-time buyers!",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
+      name: "Emily Davis",
+      profession: "Teacher"
+    },
+    {
+      id: 5,
+      rating: 5,
+      review: "Best real estate experience ever. Found perfect investment property with great returns.",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face",
+      name: "David Wilson",
+      profession: "Investor"
+    },
+    {
+      id: 6,
+      rating: 5,
+      review: "Excellent service and great communication throughout the entire selling process.",
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&crop=face",
+      name: "Lisa Anderson",
+      profession: "Doctor"
+    },
+    {
+      id: 7,
+      rating: 5,
+      review: "Fantastic team! They understood our needs and delivered beyond our expectations.",
+      image: "https://images.unsplash.com/photo-1463453091185-61582044d556?w=80&h=80&fit=crop&crop=face",
+      name: "Robert Taylor",
+      profession: "Architect"
+    },
+    {
+      id: 8,
+      rating: 5,
+      review: "Professional service from start to finish. Made our home buying journey smooth.",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&h=80&fit=crop&crop=face",
+      name: "Jennifer Lee",
+      profession: "Nurse"
+    }
+  ]
+
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isTransitioning, setIsTransitioning] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => prevIndex + 1)
+    }, 4000)
+
+    return () => clearInterval(interval)
+  }, [])
+
+  useEffect(() => {
+    if (currentIndex >= testimonials.length) {
+      setTimeout(() => {
+        setIsTransitioning(false)
+        setCurrentIndex(0)
+        setTimeout(() => setIsTransitioning(true), 50)
+      }, 500)
+    }
+  }, [currentIndex, testimonials.length])
+
+  return (
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-12">
+          <p className="text-sm text-gray-600 mb-4">TESTIMONIALS</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            Client Testimonials: Trust And Success
+          </h2>
+        </div>
+
+        <div className="relative overflow-hidden">
+          <div 
+            className={`flex ${isTransitioning ? 'transition-transform duration-500 ease-in-out' : ''}`}
+            style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+          >
+            {[...testimonials, ...testimonials.slice(0, 3)].map((testimonial, index) => (
+              <div key={`${testimonial.id}-${index}`} className="w-1/3 flex-shrink-0 px-3">
+                <div className="bg-white rounded-lg shadow-lg p-6 h-48 flex flex-col justify-between">
+                  <div>
+                    <div className="flex mb-3">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-gray-700 text-sm mb-4 italic">"{testimonial.review}"</p>
+                  </div>
+                  <div className="flex items-center">
+                    <img 
+                      src={testimonial.image} 
+                      alt={testimonial.name}
+                      className="w-10 h-10 rounded-full object-cover mr-3"
+                    />
+                    <div>
+                      <h4 className="font-bold text-gray-900 text-sm">{testimonial.name}</h4>
+                      <p className="text-gray-600 text-xs">{testimonial.profession}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
