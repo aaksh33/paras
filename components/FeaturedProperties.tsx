@@ -86,8 +86,8 @@ export default function FeaturedProperties() {
 
         <div className="relative overflow-hidden">
           <div 
-            className={`flex ${isTransitioning ? 'transition-transform duration-500 ease-in-out' : ''}`}
-            style={{ transform: `translateX(-${currentIndex * (100 / 1)}%)` }} className="md:!transform-none"
+            className={`flex ${isTransitioning ? 'transition-transform duration-500 ease-in-out' : ''} md:!transform-none`}
+            style={{ transform: `translateX(-${currentIndex * (100 / 1)}%)` }}
           >
             {[...properties, ...properties.slice(0, 3)].map((property, index) => (
               <div key={`${property.id}-${index}`} className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
