@@ -48,7 +48,7 @@ export default function PropertyTypes() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {propertyTypes.map((type) => (
             <div key={type.id} className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-center space-x-4">
@@ -73,7 +73,7 @@ export default function PropertyTypes() {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-          <div className="absolute left-8 top-1/2 transform -translate-y-1/2 bg-white p-8 rounded-lg max-w-md">
+          <div className="absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 bg-white p-4 md:p-8 rounded-lg max-w-xs md:max-w-md">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
               Looking To Buy Or Sell?
             </h3>

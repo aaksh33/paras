@@ -9,10 +9,10 @@ export default function Hero() {
               Find Your Perfect Home And Experience Exceptional Living
             </h1>
           </div>
-          <div className="text-left ml-32">
+          <div className="text-left lg:ml-32">
             <p className="text-base text-gray-700 mb-6">
-              Whether you are buying, selling or investing our expert team<br/>
-              is here to guide you every step of the way.<br/>
+              Whether you are buying, selling or investing our expert team 
+              is here to guide you every step of the way. 
               Find your perfect place with ease.
             </p>
             <div className="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors cursor-pointer">
@@ -27,7 +27,7 @@ export default function Hero() {
           <img 
             src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=3840&h=2160&auto=format&fit=crop" 
             alt="Luxury Apartment" 
-            className="w-[120%] h-[500px] object-cover rounded-lg shadow-2xl mx-auto"
+            className="w-full lg:w-[120%] h-[300px] md:h-[400px] lg:h-[500px] object-cover rounded-lg shadow-2xl mx-auto"
           />
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-11/12">
             <div className="bg-gray-100 rounded-lg shadow-lg p-6">

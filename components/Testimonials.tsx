@@ -103,11 +103,11 @@ export default function Testimonials() {
         <div className="relative overflow-hidden">
           <div 
             className={`flex ${isTransitioning ? 'transition-transform duration-500 ease-in-out' : ''}`}
-            style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+            style={{ transform: `translateX(-${currentIndex * (100 / 1)}%)` }} className="md:!transform-none"
           >
             {[...testimonials, ...testimonials.slice(0, 3)].map((testimonial, index) => (
-              <div key={`${testimonial.id}-${index}`} className="w-1/3 flex-shrink-0 px-3">
-                <div className="bg-white rounded-lg shadow-lg p-6 h-48 flex flex-col justify-between">
+              <div key={`${testimonial.id}-${index}`} className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+                <div className="bg-white rounded-lg shadow-lg p-6 h-auto md:h-48 flex flex-col justify-between">
                   <div>
                     <div className="flex mb-3">
                       {[...Array(testimonial.rating)].map((_, i) => (
