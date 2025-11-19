@@ -52,7 +52,7 @@ export default function Stats() {
     <section ref={sectionRef} className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center p-8 bg-gray-50 rounded-lg">
+          <div className="text-center p-8 bg-gray-50 rounded-lg shadow-lg">
             <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
               {counts.years}+
             </div>
@@ -61,7 +61,7 @@ export default function Stats() {
             </p>
           </div>
           
-          <div className="text-center p-8 bg-gray-50 rounded-lg">
+          <div className="text-center p-8 bg-gray-50 rounded-lg shadow-lg">
             <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
               {(counts.clients / 1000).toFixed(1)}k
             </div>
@@ -70,7 +70,7 @@ export default function Stats() {
             </p>
           </div>
           
-          <div className="text-center p-8 bg-gray-50 rounded-lg">
+          <div className="text-center p-8 bg-gray-50 rounded-lg shadow-lg">
             <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
               {counts.awards}+
             </div>

@@ -55,14 +55,17 @@ export default function FeaturedProperties() {
 
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(true)
+  const [isPaused, setIsPaused] = useState(false)
 
   useEffect(() => {
+    if (isPaused) return
+    
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => prevIndex + 1)
     }, 3000)
 
     return () => clearInterval(interval)
-  }, [])
+  }, [isPaused])
 
   useEffect(() => {
     if (currentIndex >= properties.length) {
@@ -86,12 +89,12 @@ export default function FeaturedProperties() {
 
         <div className="relative overflow-hidden">
           <div 
-            className={`flex ${isTransitioning ? 'transition-transform duration-500 ease-in-out' : ''} md:!transform-none`}
-            style={{ transform: `translateX(-${currentIndex * (100 / 1)}%)` }}
+            className={`flex ${isTransitioning ? 'transition-transform duration-500 ease-in-out' : ''}`}
+            style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
           >
             {[...properties, ...properties.slice(0, 3)].map((property, index) => (
-              <div key={`${property.id}-${index}`} className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div key={`${property.id}-${index}`} className="w-1/3 flex-shrink-0 px-4">
+                <div className="bg-white rounded-lg shadow-md drop-shadow-sm hover:shadow-xl hover:drop-shadow-lg transition-all overflow-hidden h-full flex flex-col" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
                   <div className="relative">
                     <img 
                       src={property.image} 
@@ -102,7 +105,7 @@ export default function FeaturedProperties() {
                       FOR SALE
                     </div>
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex-1 flex flex-col justify-between">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">{property.title}</h3>
                     <p className="text-2xl font-bold text-blue-600">{property.price}</p>
                   </div>

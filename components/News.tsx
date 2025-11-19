@@ -70,17 +70,19 @@ export default function News() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {newsArticles.map((article) => (
-            <div key={article.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img 
-                src={article.image} 
-                alt={article.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
+            <div key={article.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full flex flex-col">
+              <div className="overflow-hidden">
+                <img 
+                  src={article.image} 
+                  alt={article.title}
+                  className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col">
                 <p className="text-sm text-gray-500 mb-2">{article.date}</p>
                 <h3 className="text-lg font-bold text-gray-900 mb-3">{article.title}</h3>
-                <p className="text-gray-600 text-sm mb-4">{article.description}</p>
-                <a href="#" className="text-blue-600 text-sm font-semibold hover:text-blue-800 transition-colors">
+                <p className="text-gray-600 text-sm mb-4 flex-1">{article.description}</p>
+                <a href="#" className="text-blue-600 text-sm font-semibold hover:text-blue-800 transition-colors mt-auto">
                   Continue Reading →
                 </a>
               </div>
