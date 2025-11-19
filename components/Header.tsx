@@ -64,7 +64,7 @@ export default function Header() {
               </svg>
             </Link>
             <Link 
-              href='/contact' 
+              href='/get-quote' 
               className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Get Quote
@@ -106,7 +106,7 @@ export default function Header() {
               ))}
               <div className="pt-4 border-t border-gray-100">
                 <Link 
-                  href='/contact' 
+                  href='/get-quote' 
                   className="block w-full text-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg font-semibold"
                   onClick={() => setIsMenuOpen(false)}
                 >

@@ -1,4 +1,18 @@
+'use client'
+import { useState } from 'react'
+
 export default function News() {
+  const [email, setEmail] = useState('')
+  const [isSignedUp, setIsSignedUp] = useState(false)
+
+  const handleSignUp = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (email) {
+      setIsSignedUp(true)
+      setEmail('')
+      setTimeout(() => setIsSignedUp(false), 3000)
+    }
+  }
   const newsArticles = [
     {
       id: 1,
@@ -114,16 +128,30 @@ export default function News() {
               <p className="text-lg mb-8">
                 market insights, and exclusive offers.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none border border-gray-300"
-                />
-                <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                  SIGN UP
-                </button>
-              </div>
+              {isSignedUp ? (
+                <div className="text-center">
+                  <div className="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-lg font-semibold">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Successfully Signed Up!
+                  </div>
+                </div>
+              ) : (
+                <form onSubmit={handleSignUp} className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                  <input 
+                    type="email" 
+                    placeholder="Enter your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    className="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none border border-gray-300"
+                  />
+                  <button type="submit" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    SIGN UP
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>

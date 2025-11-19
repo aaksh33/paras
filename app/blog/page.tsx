@@ -6,7 +6,7 @@ export default function BlogPage() {
       excerpt: "Essential advice for first-time homebuyers navigating today's competitive market. Learn the insider secrets that can save you thousands.",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=250&fit=crop",
       date: "March 15, 2024",
-      author: "John Smith",
+      author: "Rajesh Kumar",
       category: "Buying Guide",
       readTime: "5 min read"
     },
@@ -16,7 +16,7 @@ export default function BlogPage() {
       excerpt: "Current market analysis and predictions for property values in major cities. Stay ahead of the curve with expert insights.",
       image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=250&fit=crop",
       date: "March 12, 2024",
-      author: "Sarah Johnson",
+      author: "Priya Sharma",
       category: "Market Analysis",
       readTime: "8 min read"
     },
@@ -26,7 +26,7 @@ export default function BlogPage() {
       excerpt: "How to choose the right investment property for maximum returns. Complete guide to building wealth through real estate.",
       image: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=400&h=250&fit=crop",
       date: "March 10, 2024",
-      author: "Michael Brown",
+      author: "Amit Singh",
       category: "Investment",
       readTime: "12 min read"
     },
@@ -36,7 +36,7 @@ export default function BlogPage() {
       excerpt: "Professional tips to make your home more appealing to potential buyers and sell faster at a better price.",
       image: "https://images.unsplash.com/photo-1448630360428-65456885c650?w=400&h=250&fit=crop",
       date: "March 8, 2024",
-      author: "Emily Davis",
+      author: "Sunita Gupta",
       category: "Selling Tips",
       readTime: "6 min read"
     },
@@ -46,7 +46,7 @@ export default function BlogPage() {
       excerpt: "Latest changes in interest rates and how they affect your home purchase decisions in the current market.",
       image: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=400&h=250&fit=crop",
       date: "March 5, 2024",
-      author: "David Wilson",
+      author: "Vikash Agarwal",
       category: "Finance",
       readTime: "4 min read"
     },
@@ -56,7 +56,7 @@ export default function BlogPage() {
       excerpt: "Must-have amenities that add value to high-end residential properties and attract premium buyers.",
       image: "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=400&h=250&fit=crop",
       date: "March 3, 2024",
-      author: "Lisa Anderson",
+      author: "Meera Jain",
       category: "Luxury Homes",
       readTime: "7 min read"
     }
@@ -120,13 +120,7 @@ export default function BlogPage() {
               </article>
             ))}
           </div>
-          
-          {/* Load More Button */}
-          <div className="text-center mt-12">
-            <button className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-              Load More Articles
-            </button>
-          </div>
+
         </div>
       </section>
     </main>

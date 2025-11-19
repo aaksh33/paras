@@ -6,7 +6,7 @@ export default function Testimonials() {
     {
       id: 1,
       rating: 5,
-      review: "Harman Agro Interprises helped us find our dream farmhouse in Faridabad. Excellent service!",
+      review: "Harman Agro Enterprises helped us find our dream farmhouse in Faridabad. Excellent service!",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
       name: "Rajesh Kumar",
       profession: "IT Professional, Gurgaon"

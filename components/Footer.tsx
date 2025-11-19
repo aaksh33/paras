@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 relative">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           <div className="sm:col-span-2 lg:col-span-1">
-            <h3 className="text-xl sm:text-2xl font-bold text-blue-400 mb-3 sm:mb-4">Harman Agro Interprises</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-blue-400 mb-3 sm:mb-4">Harman Agro Enterprises</h3>
             <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
               Your trusted partner in finding the perfect property across Delhi NCR. We make real estate simple and transparent.
             </p>
@@ -70,11 +70,11 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-6 sm:mt-8 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-gray-300 text-xs sm:text-sm text-center sm:text-left">
-              &copy; 2024 Harman Agro Interprises. All rights reserved.
+              &copy; 2024 Harman Agro Enterprises. All rights reserved.
             </p>
             <div className="flex space-x-4 text-xs sm:text-sm">
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">Terms of Service</a>
+              <a href="/privacy-policy" className="text-gray-300 hover:text-blue-400 transition-colors">Privacy Policy</a>
+              <a href="/terms-of-service" className="text-gray-300 hover:text-blue-400 transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>

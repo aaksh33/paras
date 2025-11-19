@@ -8,7 +8,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16">
             <span className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full text-sm font-semibold mb-6 shadow-lg">
-              ABOUT HARMAN AGRO INTERPRISES
+              ABOUT HARMAN AGRO Enterprises
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Your Trusted Partner In 
@@ -29,7 +29,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl transform rotate-3 opacity-10"></div>
               <img 
                 src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop" 
-                alt="Harman Agro Interprises Office"
+                alt="Harman Agro Enterprises Office"
                 className="relative w-full h-96 object-cover rounded-3xl shadow-2xl"
               />
             </div>
@@ -38,7 +38,7 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  Founded with a vision to revolutionize real estate in Delhi NCR, Harman Agro Interprises has been serving clients for over 25 years. We specialize in farmhouses, cottages, freehold plotting, commercial properties, and residential flats.
+                  Founded with a vision to revolutionize real estate in Delhi NCR, Harman Agro Enterprises has been serving clients for over 25 years. We specialize in farmhouses, cottages, freehold plotting, commercial properties, and residential flats.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
                   Our deep understanding of local markets, combined with personalized service, has helped over 1000 families find their perfect properties across Faridabad, Mathura, Ballabhgarh, Noida, Delhi, and surrounding areas.

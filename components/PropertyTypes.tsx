@@ -98,9 +98,9 @@ export default function PropertyTypes() {
             <p className="text-gray-700 mb-6">
               Contact us now for a free consultation and let our team of experts guide you through the process.
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+            <a href="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
       </div>
