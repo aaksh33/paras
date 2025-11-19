@@ -30,7 +30,7 @@ export default function Header() {
                   Harman Agro
                 </span>
                 <span className="text-blue-600 font-semibold text-sm leading-tight">
-                  Interprises
+                  Enterprises
                 </span>
               </div>
             </Link>
