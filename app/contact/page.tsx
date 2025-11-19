@@ -36,7 +36,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Phone</h3>
-                    <p className="text-gray-600 mb-1">+91 98765 43210</p>
+                    <p className="text-gray-600 mb-1">7290822142</p>
                     <p className="text-sm text-gray-500">Mon-Fri 9AM-6PM</p>
                   </div>
                 </div>
@@ -50,7 +50,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
-                    <p className="text-gray-600 mb-1">info@eliteproperties.com</p>
+                    <p className="text-gray-600 mb-1">Sureshrahi7638@gmail.com</p>
                     <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
                   </div>
                 </div>
@@ -63,8 +63,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Office</h3>
-                    <p className="text-gray-600 mb-1">123 Business Street</p>
-                    <p className="text-gray-600 mb-1">Seattle, WA 98101</p>
+                    <p className="text-gray-600 mb-1">1st floor, St.Columbus School, SCO - 10, Dayal Bagh Rd, opp. Sant,</p>
+                    <p className="text-gray-600 mb-1">Chetram Colony, Block GC, Surajkund, Faridabad, Haryana 121009</p>
                     <p className="text-sm text-gray-500">Visit us for in-person consultation</p>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export default function ContactPage() {
                 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">I'm interested in</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors">
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors appearance-none bg-white cursor-pointer text-black">
                     <option>Select an option</option>
                     <option>Buying a home</option>
                     <option>Selling a home</option>
@@ -164,17 +164,20 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Visit Our Office</h2>
-            <p className="text-lg text-gray-600">Located in the heart of Seattle, we're easily accessible</p>
+            <p className="text-lg text-gray-600">Located in Surajkund, Faridabad, we're easily accessible</p>
           </div>
           
-          <div className="bg-gray-200 rounded-xl h-96 flex items-center justify-center">
-            <div className="text-center">
-              <svg className="w-16 h-16 text-gray-400 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-              </svg>
-              <p className="text-gray-500">Interactive Map Coming Soon</p>
-              <p className="text-sm text-gray-400 mt-2">123 Business Street, Seattle, WA 98101</p>
-            </div>
+          <div className="rounded-xl overflow-hidden shadow-lg">
+            <iframe 
+              src="https://www.google.com/maps?q=St.Columbus+School,+SCO-10,+Dayal+Bagh+Road,+Surajkund,+Faridabad,+Haryana+121009&output=embed"
+              width="100%" 
+              height="400" 
+              style={{border: 0}} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Harman Agro Enterprises Office Location"
+            ></iframe>
           </div>
         </div>
       </section>

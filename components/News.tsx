@@ -96,7 +96,13 @@ export default function News() {
             alt="Newsletter Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-50">
+            <img 
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=3840&h=2160&auto=format&fit=crop" 
+              alt="Property Newsletter Background"
+              className="w-full h-full object-cover opacity-60"
+            />
+          </div>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white max-w-2xl px-6">
               <h3 className="text-3xl md:text-4xl font-bold mb-4">

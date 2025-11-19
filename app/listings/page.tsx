@@ -2,119 +2,118 @@ export default function ListingsPage() {
   const properties = [
     {
       id: 1,
-      title: "Modern Downtown Condo",
-      price: "$850,000",
-      location: "Downtown, Seattle",
+      title: "Beautiful Cottage",
+      price: "Market Price",
+      location: "Mathura",
       beds: 2,
       baths: 2,
       sqft: 1200,
-      type: "Condo",
+      type: "Cottage",
       status: "FOR SALE",
       featured: true,
-      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400&h=300&fit=crop"
     },
     {
       id: 2,
-      title: "Luxury Family Home",
-      price: "$1,250,000",
-      location: "Bellevue, WA",
+      title: "Premium Farmhouse",
+      price: "Market Price",
+      location: "Faridabad",
       beds: 4,
       baths: 3,
       sqft: 2800,
-      type: "House",
+      type: "Farmhouse",
       status: "FOR SALE",
       featured: false,
-      image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop"
     },
     {
       id: 3,
-      title: "Stylish Townhouse",
-      price: "$675,000",
-      location: "Capitol Hill, Seattle",
-      beds: 3,
-      baths: 2,
+      title: "Freehold Plotting",
+      price: "Market Price",
+      location: "Ballabhgarh",
+      beds: 0,
+      baths: 0,
       sqft: 1800,
-      type: "Townhouse",
-      status: "FOR RENT",
+      type: "Freehold Plotting",
+      status: "FOR SALE",
       featured: false,
-      image: "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&h=300&fit=crop"
     },
     {
       id: 4,
-      title: "Contemporary Villa",
-      price: "$950,000",
-      location: "Redmond, WA",
-      beds: 3,
-      baths: 2,
+      title: "Commercial Building Property",
+      price: "Market Price",
+      location: "Nanital",
+      beds: 0,
+      baths: 0,
       sqft: 2200,
-      type: "Villa",
+      type: "Commercial Building Property",
       status: "FOR SALE",
       featured: true,
-      image: "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop"
     },
     {
       id: 5,
-      title: "Elegant Mansion",
-      price: "$1,100,000",
-      location: "Kirkland, WA",
-      beds: 5,
-      baths: 4,
-      sqft: 3500,
-      type: "Mansion",
+      title: "Modern Flat",
+      price: "Market Price",
+      location: "Noida",
+      beds: 3,
+      baths: 2,
+      sqft: 1500,
+      type: "Flat",
       status: "FOR SALE",
       featured: false,
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop"
     },
     {
       id: 6,
-      title: "Cozy Suburban Home",
-      price: "$750,000",
-      location: "Bothell, WA",
+      title: "Luxury Flat",
+      price: "Market Price",
+      location: "Delhi",
       beds: 3,
       baths: 2,
       sqft: 1900,
-      type: "House",
+      type: "Flat",
       status: "FOR SALE",
       featured: false,
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop"
     }
   ]
 
   return (
     <main className="bg-gray-50 min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 py-20">
+      <section className="bg-gradient-to-r from-blue-900 to-blue-700 py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-blue-200 font-semibold tracking-wide uppercase mb-4">LISTINGS</p>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <p className="text-blue-200 font-semibold tracking-wide uppercase mb-4 text-sm">LISTINGS</p>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
             Premium Property Listings
           </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
+          <p className="text-base sm:text-lg lg:text-xl text-blue-100 max-w-3xl mx-auto mb-6 sm:mb-8">
             Discover exceptional homes and investment opportunities in prime locations
           </p>
           
           {/* Search Filters */}
-          <div className="bg-white rounded-lg p-6 max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+          <div className="bg-white rounded-lg p-4 sm:p-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+              <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-black bg-white">
                 <option>All Types</option>
-                <option>House</option>
-                <option>Condo</option>
-                <option>Townhouse</option>
-                <option>Villa</option>
+                <option>Cottage</option>
+                <option>Farmhouse</option>
+                <option>Freehold Plotting</option>
+                <option>Commercial Building Property</option>
+                <option>Flat</option>
               </select>
-              <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+              <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-black bg-white">
                 <option>Any Price</option>
-                <option>$0 - $500K</option>
-                <option>$500K - $1M</option>
-                <option>$1M+</option>
+                <option>According to Market Price</option>
               </select>
-              <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
-                <option>Any Beds</option>
-                <option>1+ Beds</option>
-                <option>2+ Beds</option>
-                <option>3+ Beds</option>
-                <option>4+ Beds</option>
+              <select className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-black bg-white">
+                <option>Property Size</option>
+                <option>1 BHK</option>
+                <option>2 BHK</option>
+                <option>3 BHK</option>
+                <option>4+ BHK</option>
               </select>
               <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                 Search
@@ -129,15 +128,17 @@ export default function ListingsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-8">
             <p className="text-gray-600">{properties.length} properties found</p>
-            <select className="px-4 py-2 border border-gray-300 rounded-lg">
+            <select className="px-4 py-2 border border-gray-300 rounded-lg text-black bg-white">
+              <option>Sort by: Featured</option>
               <option>Sort by: Price (Low to High)</option>
               <option>Sort by: Price (High to Low)</option>
-              <option>Sort by: Newest</option>
-              <option>Sort by: Size</option>
+              <option>Sort by: Newest First</option>
+              <option>Sort by: Property Size</option>
+              <option>Sort by: Location</option>
             </select>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {properties.map((property) => (
               <div key={property.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                 <div className="relative overflow-hidden">
@@ -153,13 +154,7 @@ export default function ListingsPage() {
                       {property.status}
                     </span>
                   </div>
-                  {property.featured && (
-                    <div className="absolute top-4 right-4">
-                      <span className="bg-yellow-500 text-white px-2 py-1 rounded text-xs font-semibold">
-                        FEATURED
-                      </span>
-                    </div>
-                  )}
+
                   <div className="absolute bottom-4 right-4">
                     <button className="bg-white bg-opacity-90 p-2 rounded-full hover:bg-opacity-100 transition-all">
                       <svg className="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
@@ -172,7 +167,7 @@ export default function ListingsPage() {
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-3">
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-1">{property.title}</h3>
+                      <h3 className="text-lg font-bold text-gray-900 mb-1">{property.title}</h3>
                       <p className="text-gray-600 flex items-center">
                         <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" />
@@ -180,7 +175,7 @@ export default function ListingsPage() {
                         {property.location}
                       </p>
                     </div>
-                    <span className="text-2xl font-bold text-blue-600">{property.price}</span>
+                    <span className="text-lg font-bold text-blue-600">{property.price}</span>
                   </div>
                   
                   <div className="flex justify-between items-center py-3 border-t border-gray-100">
@@ -206,14 +201,9 @@ export default function ListingsPage() {
                     </div>
                   </div>
                   
-                  <div className="flex space-x-3 mt-4">
-                    <button className="flex-1 bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                  <div className="mt-4">
+                    <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                       View Details
-                    </button>
-                    <button className="px-4 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
-                      <svg className="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                      </svg>
                     </button>
                   </div>
                 </div>
@@ -221,12 +211,7 @@ export default function ListingsPage() {
             ))}
           </div>
           
-          {/* Load More */}
-          <div className="text-center mt-12">
-            <button className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-              Load More Properties
-            </button>
-          </div>
+
         </div>
       </section>
     </main>
