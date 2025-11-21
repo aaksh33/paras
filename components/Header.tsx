@@ -16,7 +16,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm shadow-lg fixed w-full top-0 z-50 border-b border-gray-100">
+    <header className="bg-white/95 backdrop-blur-sm fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -117,6 +117,8 @@ export default function Header() {
           </div>
         )}
       </div>
+      
+
     </header>
   )
 }

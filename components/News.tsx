@@ -106,52 +106,42 @@ export default function News() {
         
         <div className="mt-16 relative h-80 rounded-lg overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" 
-            alt="Newsletter Background"
+            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=3840&h=2160&auto=format&fit=crop" 
+            alt="Dream Home Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50">
-            <img 
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=3840&h=2160&auto=format&fit=crop" 
-              alt="Property Newsletter Background"
-              className="w-full h-full object-cover opacity-60"
-            />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/60">
           </div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center text-white max-w-2xl px-6">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">
-                Stay Updated With The Latest News
+            <div className="text-center text-white max-w-3xl px-6">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Ready To Find Your Dream Home?
               </h3>
-              <p className="text-lg mb-2">
-                Signup for our newsletter and be the first to know about new listings,
+              <p className="text-lg md:text-xl mb-8 leading-relaxed">
+                Let our expert team guide you through every step of your property journey. 
+                From buying to selling, we make real estate simple and stress-free.
               </p>
-              <p className="text-lg mb-8">
-                market insights, and exclusive offers.
-              </p>
-              {isSignedUp ? (
-                <div className="text-center">
-                  <div className="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-lg font-semibold">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    Successfully Signed Up!
-                  </div>
-                </div>
-              ) : (
-                <form onSubmit={handleSignUp} className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-                  <input 
-                    type="email" 
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    className="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none border border-gray-300"
-                  />
-                  <button type="submit" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                    SIGN UP
-                  </button>
-                </form>
-              )}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a 
+                  href="tel:7290822142" 
+                  className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg"
+                >
+                  <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
+                  Call Now: 7290822142
+                </a>
+                <a 
+                  href="/listings" 
+                  className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors shadow-lg"
+                >
+                  <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5a2 2 0 012-2h4a2 2 0 012 2v6H8V5z" />
+                  </svg>
+                  View Properties
+                </a>
+              </div>
             </div>
           </div>
         </div>

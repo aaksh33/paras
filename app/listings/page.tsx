@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function ListingsPage() {
   const properties = [
     {
@@ -140,7 +142,7 @@ export default function ListingsPage() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {properties.map((property) => (
-              <div key={property.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <div key={property.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col h-full">
                 <div className="relative overflow-hidden">
                   <img 
                     src={property.image} 
@@ -164,7 +166,7 @@ export default function ListingsPage() {
                   </div>
                 </div>
                 
-                <div className="p-6">
+                <div className="p-6 flex-1 flex flex-col">
                   <div className="flex justify-between items-start mb-3">
                     <div>
                       <h3 className="text-lg font-bold text-gray-900 mb-1">{property.title}</h3>
@@ -201,10 +203,13 @@ export default function ListingsPage() {
                     </div>
                   </div>
                   
-                  <div className="mt-4">
-                    <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                  <div className="mt-auto pt-4">
+                    <Link 
+                      href={`/property/${property.id}`}
+                      className="block w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
+                    >
                       View Details
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
