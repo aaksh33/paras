@@ -52,7 +52,7 @@ export default function Hero() {
     return () => clearInterval(interval)
   }, [])
   return (
-    <section className="relative min-h-screen bg-white flex items-center pt-40">
+    <section className="relative min-h-screen bg-white flex items-center">
       <div className="absolute inset-0 bg-gray-50"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 sm:mt-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">

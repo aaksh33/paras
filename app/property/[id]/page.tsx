@@ -21,10 +21,10 @@ export default function PropertyDetailPage() {
       status: "FOR SALE",
       image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop",
       gallery: [
-        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop"
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800&h=600&fit=crop"
       ],
       description: "This beautiful cottage offers a perfect blend of rustic charm and modern comfort. Located in the serene surroundings of Mathura, this property features spacious rooms, well-maintained gardens, and excellent connectivity to major landmarks.",
       features: ["Garden", "Parking", "Security", "Power Backup", "Water Supply"],
@@ -43,10 +43,10 @@ export default function PropertyDetailPage() {
       status: "FOR SALE",
       image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop",
       gallery: [
-        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&h=600&fit=crop"
+        "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop"
       ],
       description: "Luxurious farmhouse spread across 2800 sqft with modern amenities and agricultural land. Perfect for those seeking a peaceful lifestyle away from city chaos while maintaining connectivity to urban facilities.",
       features: ["Swimming Pool", "Garden", "Parking", "Security", "Agricultural Land", "Bore Well"],
@@ -65,8 +65,8 @@ export default function PropertyDetailPage() {
       status: "FOR SALE",
       image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",
       gallery: [
-        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1500076656116-558758c991c1?w=800&h=600&fit=crop"
       ],
@@ -132,9 +132,9 @@ export default function PropertyDetailPage() {
       image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
       gallery: [
         "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop"
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop"
       ],
       description: "Luxurious 3BHK flat in prime Delhi location with premium finishes and world-class amenities. Ideal for those seeking upscale living in the heart of the capital.",
       features: ["Premium Finishes", "Balcony", "Parking", "Security", "Lift", "Swimming Pool", "Spa"],
