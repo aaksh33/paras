@@ -118,25 +118,27 @@ export default function Header() {
         )}
       </div>
       
-      {/* Buy/Rent Buttons */}
-      <div className="bg-gray-50 py-3 sm:py-4 border-t border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center space-x-4">
-            <Link 
-              href="/listings" 
-              className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm"
-            >
-              Buy
-            </Link>
-            <Link 
-              href="/listings" 
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-sm"
-            >
-              Rent
-            </Link>
+      {/* Buy/Rent Buttons - Only on Home Page */}
+      {pathname === '/' && (
+        <div className="bg-gray-50 py-3 sm:py-4 border-t border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-center space-x-4">
+              <Link 
+                href="/listings" 
+                className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm"
+              >
+                Buy
+              </Link>
+              <Link 
+                href="/listings" 
+                className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-sm"
+              >
+                Rent
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </header>
   )
 }
