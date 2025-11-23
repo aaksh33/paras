@@ -6,7 +6,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           <div className="text-center lg:text-left">
             <span className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
-              ABOUT HARMAN AGRO Enterprises
+              ABOUT HARMAN AGRO ENTERPRISES
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
               Your Trusted Partner In Property Solutions

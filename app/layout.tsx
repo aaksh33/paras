@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Header from '../components/Header'
-import BuyRentBar from '../components/BuyRentBar'
 import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
@@ -18,7 +17,6 @@ export default function RootLayout({
     <html lang="en">
       <body className='!bg-gray-50'>
         <Header />
-        <BuyRentBar />
         {children}
         <Footer />
       </body>
